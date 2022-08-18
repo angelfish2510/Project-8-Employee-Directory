@@ -1,0 +1,37 @@
+.card {
+    display: flex;
+    padding: 20px 5px;
+    border: 2.5px solid lightgrey;
+    border-radius: 12px;
+    background-color: white;
+    margin: auto;
+    width: 425px;
+    // overflow: visible;
+}
+
+.avatar {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+}
+
+.text-container {
+    padding-left: 30px;
+    background-color: white;
+}
+
+.text-container p {
+    color: grey;
+    line-height: .8em;
+}
+
+.name,
+.email,
+.address,
+.phone,
+.birthday,
+.avatar,
+.modal-content,
+.modal-close {
+    background-color: white;
+}
