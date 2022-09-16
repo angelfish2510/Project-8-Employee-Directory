@@ -128,16 +128,16 @@ gridContainer.addEventListener('click', e => {
 
 // display modal from search results
 
-gridContainer.addEventListener('click', e => {
-    if (e.target !== gridContainer){
+// gridContainer.addEventListener('click', e => {
+//     if (e.target !== gridContainer){
 
-        const card = e.target.closest(".card");
-        const index = card.getAttribute("data-index");
+//         const card = e.target.closest(".card");
+//         const index = card.getAttribute("data-index");
 
-        displayModal(index);
-    }
+//         displayModal(index);
+//     }
 
-});
+// });
 
 //modal scroll
 
