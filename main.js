@@ -53,7 +53,8 @@ function displayEmployees(employeeData) {
 }
 
 // display modal function with parameter index
-function displayModal(index) {
+function displayModal(i) {
+    index = i;
     let { name, dob, phone, email, location: {city, street, state, postcode}, picture } = employees[index];
 
     let date = new Date(dob.date);
@@ -153,7 +154,7 @@ let showPreviousEmployee = () => {
 
 
 let showNextEmployee = () => {
-    if (index < 12) {
+    if (index < 11) {
         index = Number.parseInt(index, 10) +1;
         displayModal(index)
     } else {    
