@@ -1,0 +1,52 @@
+.searchforuser {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    width: 50%;
+}
+
+// #searchBar {
+//     width: 60%;
+//     height: 2em;
+//     background-color: purple;
+//     border-radius: 5px;
+//     border: solid 2px gray;
+//     list-style-type: none;
+//     transition: width 1s;
+//   }
+
+//   #searchBar:focus{
+//     outline: none;
+//     border: 3.2px solid purple;
+//     background-color: grey;
+//     color: purple;
+//     width: 70%;
+//   }
+
+//   #searchBar::placeholder {
+//     font-size: .75em;
+//   }
+
+  #searchBar{
+    padding:15px;
+    border-color: #4B0082;
+    border-width: 4px;
+    border-radius: 8px;
+    background-color: $searchbar-color;
+    color: #4B0082;
+  }
+
+  input[type=text] {
+     min-width: 30%;
+     -webkit-transition: width 1s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 90%;
+    border: 3.2px solid purple;
+    background-color: grey;
+    color: #4B0082;
+  }

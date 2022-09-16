@@ -1,36 +1,45 @@
 * {
   font-family: "Lato", sans-serif;
-  background-color: pink;
+  background-color: #d0d0d0;
 }
 
 header {
-  margin-left: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: #4B0082;
+  margin-left: 15px;
 }
 
 .card {
   display: flex;
   padding: 20px 5px;
-  border: 2.5px solid lightgrey;
+  border: 2.5px solid #4B0082;
   border-radius: 12px;
-  background-color: white;
-  margin: auto;
-  width: 425px;
+  background-color: #CBC3E3;
+  margin: 1em;
+  align-items: center;
 }
 
 .avatar {
   border-radius: 50%;
-  padding: 10px;
-  background-color: white;
+  padding: 1em;
+  background-color: #CBC3E3;
 }
 
 .text-container {
   padding-left: 30px;
-  background-color: white;
+  background-color: #CBC3E3;
 }
-
 .text-container p {
-  color: grey;
+  color: #4B0082;
   line-height: 0.8em;
+}
+.text-container h2 {
+  color: #4B0082;
 }
 
 .name,
@@ -41,7 +50,7 @@ header {
 .avatar,
 .modal-content,
 .modal-close {
-  background-color: white;
+  background-color: #CBC3E3;
 }
 
 .grid-container {
@@ -50,7 +59,8 @@ header {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-gap: 15px;
+  justify-content: center;
 }
 
 body {
@@ -63,7 +73,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(100, 100, 100, 0.4);
+  background: rgba(206, 216, 209, 0.6);
 }
 
 .modal {
@@ -71,21 +81,64 @@ body {
   margin: 15% auto auto;
   position: relative;
   text-align: center;
-  background: #fff;
+  background: #CBC3E3;
   border: 1px solid #778;
   border-radius: 5px;
   padding: 30px 20px;
 }
 
 .modal-close {
+  background-color: #d0d0d0;
   position: absolute;
-  right: 15px;
+  right: 5px;
   top: 5px;
   cursor: pointer;
 }
 
 .hidden {
   display: none;
+}
+
+.modal-arrowprev {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+}
+
+.modal-arrownext {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.searchforuser {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+#searchBar {
+  padding: 15px;
+  border-color: #4B0082;
+  border-width: 4px;
+  border-radius: 8px;
+  background-color: #CBC3E3;
+  color: #4B0082;
+}
+
+input[type=text] {
+  min-width: 30%;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+     change its width to 100% */
+input[type=text]:focus {
+  width: 90%;
+  border: 3.2px solid purple;
+  background-color: grey;
+  color: #4B0082;
 }
 
 /*# sourceMappingURL=styles.css.map */

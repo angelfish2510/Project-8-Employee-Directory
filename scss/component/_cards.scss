@@ -1,29 +1,39 @@
 .card {
     display: flex;
     padding: 20px 5px;
-    border: 2.5px solid lightgrey;
+    border: 2.5px solid $base-font-color;
     border-radius: 12px;
-    background-color: white;
-    margin: auto;
-    width: 425px;
+    background-color: $searchbar-color;
+    margin: 1em;
+    align-items: center;
+    // width: 425px;
     // overflow: visible;
 }
 
 .avatar {
     border-radius: 50%;
-    padding: 10px;
-    background-color: white;
+    padding: 1em;
+    background-color: $searchbar-color;
 }
 
 .text-container {
     padding-left: 30px;
-    background-color: white;
+    background-color: $searchbar-color;
+
+    p {
+        color: $base-font-color;
+        line-height: .8em;
+    }
+
+    h2 {
+        color: $base-font-color;
+    }
 }
 
-.text-container p {
-    color: grey;
-    line-height: .8em;
-}
+// .text-container p {
+//     color: $base-font-color;
+//     line-height: .8em;
+// }
 
 .name,
 .email,
@@ -33,5 +43,5 @@
 .avatar,
 .modal-content,
 .modal-close {
-    background-color: white;
+    background-color: $searchbar-color;
 }

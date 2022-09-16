@@ -1,8 +1,15 @@
 * {
     font-family: 'Lato', sans-serif;
-    background-color: pink;
+    background-color: $base-color;
   }
 
   header {
-    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title {
+    color: $base-font-color;
+    margin-left: 15px;
   }
